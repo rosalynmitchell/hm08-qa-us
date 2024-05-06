@@ -110,7 +110,9 @@ describe('Create an order', () => {
     //Buttons
     paymentMethodButton: '.pp-text',
     addCardButton: '.pp-plus-container',
+
 Write the following function in page.js: 
+
   FillCardNumber: async function(cardNumber) {
         const paymentMethodButton = await $(this.paymentMethodButton);
         await paymentMethodButton.waitForDisplayed();
