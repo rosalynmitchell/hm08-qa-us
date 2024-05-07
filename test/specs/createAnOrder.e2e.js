@@ -60,10 +60,7 @@ describe('Create an order', () => {
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         await page.OrderBlankerandhandkerchiefs();
         await expect($(page.blanketandhandkercheifs)).toBeDisplayed();
-        //await expect($(page.toggledisplay)).toBeExisting();
         await expect($(page.togglebutton)).toBeExisting();
-        //await expect($(page.toggleswitch)).toBeExisting();
-        //await expect($(page.toggleslider)).toBeExisting();
     })
     it('Should Add Two Icecreams to Order ', async () => {
         await browser.url(`/`)
