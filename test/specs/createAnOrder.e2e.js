@@ -41,8 +41,6 @@ describe('Create an order', () => {
     it('should add credit card number and CVV code ', async () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
-        //await page.FillCardNumber('1234 0098 2233');
-        //await page.FillCvvCode('12');
         await page.AddPaymentmethodcard();
         await  expect($(page.linkButton)).toBeExisting();
         await expect($(page.addCardButton)).toBeExisting();
